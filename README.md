@@ -19,3 +19,23 @@ Setup
 Getting started
 ---------------
 
+1. Source the catkin workspace where stereo_driver is in any terminal in which it will be used: `source devel/setup.bash`
+2. Create a launch file suited to your device (see sample launch file in launch/MyCam.launch)
+3. Start capturing on the desired model of camera on the appropriate /dev/videoX: `roslaunch stereo_driver MyCam.launch DEVICE:=/dev/video0` in a separate terminal
+  * _Note:_ if you have other connected cameras, you may have to adjust the `/dev/videoX` device
+  * _Note:_ if you have different cameras, use several launch files accordingly
+
+At this point stereo camera data should be published on appropriate topics; `rostopic list` to explore what's published.
+
+If you need/want to use specific calibration files for your camera, you can replace camera_info/(left|right).yaml files with your owns.
+
+Visualizing steams
+------------------
+
+To visualize the separated images:
+* `rosrun image_view image_view image:=/stereo/left/image_raw`
+* `rosrun image_view image_view image:=/stereo/right/image_raw`
+
+To visualize the original image
+* `rosrun image_view image_view image:=/camera/image_raw`
+
