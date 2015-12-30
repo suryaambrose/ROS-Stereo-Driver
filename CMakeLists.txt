@@ -21,3 +21,10 @@ catkin_package(
     sensor_msgs
     cv_bridge
   )
+
+include_directories(include ${catkin_INCLUDE_DIRS} ${OpenCV_INCLUDE_DIRS})
+link_directories(${catkin_LINK_DIRS})
+
+add_executable(deinterlacer src/deinterlace.cpp)
+target_link_libraries(deinterlacer ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+add_dependencies(deinterlacer ${PROJECT_NAME}_gencfg)
