@@ -13,7 +13,7 @@ Setup
 3. `cd` into the `src` folder of your catkin workspace
 4. Clone sources:
   * `git clone https://github.com/ros-drivers/gscam.git`
-  * `git clone https://github.com/suryaambrose/ROSStereoDriver.git`
+  * `git clone https://github.com/suryaambrose/ros_stereo_driver.git`
 5. Go to the workspace root and build all packages: `cd .. && catkin_make`
 
 Getting started

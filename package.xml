@@ -2,7 +2,7 @@
 <package>
   <name>stereo_driver</name>
   <version>0.0.1</version>
-  <description>Package to grab the images from the Leopard stereo camera</description>
+  <description>Package to grab the images from a stereo camera</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag --> 
   <!-- Example:  -->
