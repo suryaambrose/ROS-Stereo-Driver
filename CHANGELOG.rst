@@ -2,8 +2,8 @@
 Changelog for package stereo_driver
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.2 (2016-03-13)
+------------------
 * Fix package description and project path in README
 * [README] Getting started
 * [README] Dependencies and setup instructions
